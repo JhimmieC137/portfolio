@@ -6,7 +6,7 @@ const Skill = ({ name, x, y }: { name: string; x: string; y: string }) => {
         <motion.div
             whileHover={{ scale: 1.05 }}
             initial={{ x: 0, y: 0 }}
-            animate={{ x: x, y: y }}
+            whileInView={{ x: x, y: y }}
             transition={{ duration: 1.5 }}
             className={`
                 flex item-center justify-center rounded-full font-semibold bg-dark text-light textligt
@@ -33,20 +33,20 @@ export default function Skills() {
                     Web
                 </motion.div>
 
-                <Skill name='NestJs' x="-16vw" y="18vw" />
-                <Skill name='GO' x="2vw" y="13vw" />
+                <Skill name='NestJs' x="30vw" y="-10vw" />
+                <Skill name='GO' x="-25vw" y="15vw" />
                 <Skill name='Python' x="12vw" y="-5vw" />
                 <Skill name='Java' x="3vw" y="-15vw" />
-                <Skill name='Javascript' x="-12vw" y="2vw" />
+                <Skill name='Javascript' x="-18vw" y="5vw" />
                 <Skill name='Tailwind CSS' x="-7vw" y="15vw" />
-                <Skill name='Django' x="12vw" y="-12vw" />
+                <Skill name='Django' x="15vw" y="-12vw" />
                 <Skill name='FastAPI' x="20vw" y="6vw" />
                 <Skill name='Flask' x="5vw" y="-20vw" />
-                <Skill name='ExpressJs' x="-20vw" y="10vw" />
+                <Skill name='ExpressJs' x="20vw" y="13vw" />
                 <Skill name='HTML' x="-10vw" y="-3vw" />
                 <Skill name='CSS' x="-10vw" y="-10vw" />
                 <Skill name='NextJS' x="-20vw" y="-15vw" />
-                <Skill name='React' x="-20vw" y="-5vw" />
+                <Skill name='React' x="-25svw" y="-5vw" />
             </div>
         </>
     );

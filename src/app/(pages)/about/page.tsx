@@ -7,6 +7,8 @@ import profilePic from "../../../../public/images/profile/developer-pic-2.jpg";
 import { useEffect, useRef } from "react";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "@/components/components/Skills";
+import Experience from "@/components/components/Experience";
+import Education from "@/components/components/Education";
 
 const AnimatedNumbers = ({ value }: { value: number }) => {
     const ref = useRef<HTMLSpanElement>(null);
@@ -64,9 +66,16 @@ export default function About() {
 
                             <div className="flex flex-col items-end justify-center">
                                 <span className="inline-block text-7xl font-bold">
-                                    <AnimatedNumbers value={12}/>+
+                                    <AnimatedNumbers value={4}/>+
                                 </span>
                                 <h2 className="text-xl font-medium capitalize text-dark/75">projects completed</h2>
+                            </div>
+                            
+                            <div className="flex flex-col items-end justify-center">
+                                <span className="inline-block text-7xl font-bold">
+                                    <AnimatedNumbers value={16}/>+
+                                </span>
+                                <h2 className="text-xl font-medium capitalize text-dark/75">satisfied clients</h2>
                             </div>
 
                             <div className="flex flex-col items-end justify-center">
@@ -81,7 +90,8 @@ export default function About() {
                     </div>
 
                     <Skills />
-                
+                    <Experience />
+                    <Education />
                 </SubLayout>
             </div>
         </>

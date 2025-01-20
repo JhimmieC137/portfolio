@@ -3,9 +3,9 @@ import NavBar from "@/components/components/NavBar";
 
 export default function MainLayout({ children } : { children: React.ReactNode }) {
     return (
-        <main className="bg-light text-black w-full min-h-screen">
+        <main className="text-black w-full min-h-screen max-w-[2100px] mx-auto">
             <NavBar />
-            {children}
+                {children}
             <Footer />
         </main>
     )
