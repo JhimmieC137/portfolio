@@ -9,7 +9,7 @@ import lightBulb from "../../../public/images/svgs/miscellaneous_icons_1.svg"
 
 export default function Home() {
   return (
-    <div className="flex items-center text-dark w-full min-h-screen">
+    <div className="flex items-center text-dark dark:text-light w-full min-h-screen">
       <SubLayout className="pt-0">
         <div className="flex items-center justify-between w-full">
           <div className="w-1/2">
@@ -26,13 +26,13 @@ export default function Home() {
                 href="/dummy.pdf" target={"_blank"}
                 download={true}
                 className={`flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light 
-                  hover:text-dark border border-solid border-transparent hover:border-dark
+                  hover:text-dark hover:dark:text-light hover:dark:bg-dark border border-solid border-transparent hover:border-dark hover:dark:border-light dark:bg-light dark:text-dark
                 `}
               >
                 Resume<LinkArrow className="w-6 ml-1" />
               </Link>
               <Link href="mailto:abc@gmail"
-                className="ml-4 text-lg font-medium capitalize text-dark underline"
+                className="ml-4 text-lg font-medium capitalize text-dark dark:text-light underline"
               >Contact</Link>
             </div>
           </div>

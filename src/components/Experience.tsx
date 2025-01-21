@@ -32,7 +32,7 @@ const Details = ({
                     <h3 className="capitalize font-bold text-2xl">
                         {position}&nbsp;
                         <a
-                            className="text-primary capitalize"
+                            className="text-primary dark:text-primaryDark capitalize"
                             href={companyLink}
                             target="_blank"
                             rel="noopener noreferrer"
@@ -40,7 +40,7 @@ const Details = ({
                             @{company}
                         </a>
                     </h3>
-                    <span className="captalize font-medium text-dark/75">
+                    <span className="captalize font-medium text-dark/75 dark:text-light/75">
                         {time} | {address}
                     </span>
                     <p className="font-medium w-full">
@@ -71,7 +71,7 @@ export default function Experience() {
                     style={{
                         scaleY: scrollYProgress,
                     }}
-                    className="absolute left-9 top-1.5 w-[4px] h-full bg-dark origin-top"
+                    className="absolute left-9 top-1.5 w-[4px] h-full bg-dark dark:bg-light origin-top"
                 />
                 <ul className="w-full flex flex-col items-start justify-between ml-4">
                     <Details 

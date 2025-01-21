@@ -3,8 +3,10 @@
 import Link from "next/link";
 import Logo from "./Logo";
 import { usePathname } from "next/navigation";
-import { GithubIcon, LinkedInIcon, PinterestIcon, TwitterIcon } from "./Icons";
+import { GithubIcon, LinkedInIcon, MoonIcon, PinterestIcon, SunIcon, XIcon } from "./Icons";
 import { motion } from "framer-motion";
+import { useTheme } from "../hooks/useTheme";
+// import UseThemeSwitcher from "../hooks/useThemeSwitcher";
 
 const navLinks = [
     {
@@ -33,7 +35,7 @@ const socialLinks = [
     {
         link: '/',
         name: 'Twitter',
-        tag: <TwitterIcon  />
+        tag: <XIcon className='fill-dark dark:fill-light'/>
     },
     {
         link: '/',
@@ -72,16 +74,18 @@ const CustomLink = ({
                 <span className={`
                     h-[2px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full 
                     transition-[width] ease duration-300 ${pathname === href ? "w-full" : "w-0"}
+                    dark:bg-light
                 `}>&nbsp;</span>
             </Link>
         )
     }
 
 export default function NavBar() {
+    const { theme, setTheme } = useTheme();
 
     return (
         <header
-            className="w-full px-32 py-8 font-medium flex items-center justify-between"
+            className="w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light"
         >
             <nav>
                 {
@@ -97,13 +101,28 @@ export default function NavBar() {
                         <motion.a 
                             whileHover={{ y: -3 }}
                             whileTap={{ scale: 0.9 }}
-                            className="w-6 mr-3.5"
+                            className={`w-6 mr-3.5 ${ el.name === 'Pinterest' && 'dark:bg-light rounded-full'}`}
                             key={index}
                             href={el.link} 
                             target="_blank"
                         >{el.tag}</motion.a>
                     ))
                 }
+
+                <button
+                    onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+                    className={`ml-3 flex items-center justify-center rounded-full p-1
+                        ${theme === 'dark' ? 'bg-light text-dark' : 'bg-dark text-light'}
+                    `}
+                >
+                    {
+                        theme === "dark"
+                            ? <SunIcon className={"fill-dark"} />
+                            : <MoonIcon className={"fill-dark"} />
+
+                    }
+                </button>
+
             </nav>
 
             <div className="absolute left-[50%] top-2 translate-x-[-50%]">
