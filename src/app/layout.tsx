@@ -5,7 +5,7 @@ import "./globals.css";
 import Script from "next/script";
 import { AnimatePresence } from "framer-motion";
 import React from "react";
-import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -18,7 +18,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const router = useRouter();
+  const pathName = usePathname();
   return (
     <html lang="en">
       <body
@@ -33,7 +33,7 @@ export default function RootLayout({
           `}
         </Script>
         <AnimatePresence mode="wait" initial={false}>
-            {React.cloneElement(children as React.ReactElement, { key: router.asPath })}
+            {React.cloneElement(children as React.ReactElement, { key: pathName })}
           </AnimatePresence>
       </body>
     </html>
