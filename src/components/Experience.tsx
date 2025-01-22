@@ -21,7 +21,7 @@ const Details = ({
     }) => {
         const ref = useRef<HTMLLIElement>(null);
         return (
-            <li ref={ref} className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between">
+            <li ref={ref} className="my-8 first:mt-0 last:mb-0 w-[60%] md:w-[80%] mx-auto flex flex-col items-center justify-between">
                 
                 <LiIcon reference={ref}/>
                 <motion.div
@@ -29,7 +29,7 @@ const Details = ({
                     whileInView={{y:0}}
                     transition={{duration:0.5, type:"spring"}}
                 >
-                    <h3 className="capitalize font-bold text-2xl">
+                    <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
                         {position}&nbsp;
                         <a
                             className="text-primary dark:text-primaryDark capitalize"
@@ -37,13 +37,13 @@ const Details = ({
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            @{company}
+                            @ {company}
                         </a>
                     </h3>
-                    <span className="captalize font-medium text-dark/75 dark:text-light/75">
+                    <span className="captalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
                         {time} | {address}
                     </span>
-                    <p className="font-medium w-full">
+                    <p className="font-medium w-full md:text-sm">
                         {work}
                     </p>
                 </motion.div>
@@ -63,24 +63,25 @@ export default function Experience() {
 
     return (
         <div className="my-64">
-            <h2 className="font-bold text-8xl mb-32 w-full text-center">
+            <h2 className="font-bold text-8xl md:text-6xl xs:text-4xl mb-32 md:mb-16 w-full text-center">
                 Experience
             </h2>
-            <div ref={ref} className="w-[75%] mx-auto relative">
+            <div ref={ref} className="w-[75%] lg:w-[90%] sm:w-full mx-auto relative">
                 <motion.div
                     style={{
                         scaleY: scrollYProgress,
                     }}
-                    className="absolute left-9 top-1.5 w-[4px] h-full bg-dark dark:bg-light origin-top"
+                    className="absolute left-9 top-1.5 w-[4px] h-full bg-dark dark:bg-light origin-top md:w-[2px] md:left-[30px] xs:left-[20px]"
                 />
-                <ul className="w-full flex flex-col items-start justify-between ml-4">
+                <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
                     <Details 
                         position="Software Engineer"
                         company="Google"
                         companyLink="https://www.google.com"
                         time="2022-Present"
                         address="Mountain View, CA"
-                        work={`Worked on a team responsible for developing new features for Google's 
+                        work={`
+                            Worked on a team responsible for developing new features for Google's 
                             search engine, including improving the accuracy and relevance of search results and 
                             developing new tools for data analysis and visualization.
                         `}

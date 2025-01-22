@@ -65,7 +65,7 @@ const MovingImg = ({
                 ref={imgRef}
                 src={img}
                 alt={title}
-                className="z-10 w-96 h-auto hidden absolute rounded-lg"
+                className="z-10 w-96 h-auto hidden absolute rounded-lg md:!hidden"
             />
         </Link>
     )
@@ -90,9 +90,14 @@ const Article = ({
                 transition: {duration: 0.3, ease: "easeInOut"},
             }}
             viewport={{once: true}}
-            className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark dark:bg-dark dark:text-light first:mt-0 border border-solid border-dark dark:border-light border-r-4 border-b-4">
+            className="
+                relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between 
+                bg-light text-dark dark:bg-dark dark:text-light first:mt-0 
+                border border-solid border-dark dark:border-light border-r-4 border-b-4
+                sm:flex-col"
+            >
             <MovingImg title={title} img={img} link={link} />
-            <span className="text-primary dark:text-primaryDark font-semibold pl-4">{date}</span>
+            <span className="text-primary dark:text-primaryDark font-semibold pl-4 sm:pl-0 xs:text-sm sm:self-start">{date}</span>
         </motion.li>
     );
 }
@@ -116,14 +121,18 @@ const FeaturedArticle = ({
             <Link href={link} target="_blank" className="w-full inline-block cursor-pointer overflow-hidden rounded-lg">
                 <FramerImage 
                     src={img}
-                    // alt={title}
+                    alt={title}
                     className="w-full h-auto"
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.2 }}
+                    priority
+                    sizes="(max-width: 768px) 100vw,
+                        (max-width: 1200px) 50vw,
+                        50vw"
                 />
             </Link>
             <Link href={link} target="_blank">
-                <h2 className="capitalize text-2xl font-bold my-2 mt-4 hover:underline">{title}</h2>
+                <h2 className="capitalize text-2xl font-bold my-2 mt-4 hover:underline xs:text-lg">{title}</h2>
             </Link>
             <p className="text-sm mb-2">{summary}</p>
             <span className="text-primary dark:text-primaryDark font-semibold">{time}</span>
@@ -135,8 +144,11 @@ export default function Articles() {
     return (
         <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light">
             <SubLayout className="pt-16">
-                <AnimatedText text="Words Can Change The World!" className="mb-16"/>
-                <ul className="grid grid-cols-2 gap-16">
+                <AnimatedText 
+                    text="Words Can Change The World!" 
+                    className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
+                />
+                <ul className="grid grid-cols-2 gap-16 lg:gap-8 md:gap-y-16 md:grid-cols-1">
                     <FeaturedArticle
                         title="Build A Custom Pagination Component In Reactjs From Scratch"
                         summary="Learn how to build a custom pagination component in ReactJS from scratch. 

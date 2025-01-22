@@ -10,8 +10,10 @@ const Skill = ({ name, x, y }: { name: string; x: string; y: string }) => {
             transition={{ duration: 1.5 }}
             viewport={{ once: true }}
             className={`
-                flex item-center justify-center rounded-full font-semibold bg-dark text-light textligt
+                flex item-center justify-center rounded-full font-semibold bg-dark text-light
                 py-3 px-6 shadow-dark cursor-pointer absolute dark:text-dark dark:bg-light
+                lg:py-2 lg:px-4 md:text-sm md:py-1.5 md:px-3 xs:bg-transparent xs:dark:bg-transparent
+                xs:text-dark xs:dark:text-light xs:font-bold
             `}
         >
             {name}
@@ -22,13 +24,15 @@ const Skill = ({ name, x, y }: { name: string; x: string; y: string }) => {
 export default function Skills() {
     return (
         <>
-            <h2 className="font-bold text-8xl mt-64 w-full text-center">Skills</h2>
-            <div className="w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark">
+            <h2 className="font-bold text-8xl md:text-6xl xs:text-4xl mb-32 md:mb-16 xs:mb-6 mt-64 w-full text-center">Skills</h2>
+            <div className="w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark
+                lg:h-[80vh] sm:h-[60vh] xs:h-[50vh] lg:bg-circularLightLg lg:dark:bg-circularDarkLg md:bg-circularLightMd md:dark:bg-circularDarkMd sm:bg-circularLightSm sm:dark:bg-circularDarkSm"
+            >
                 <motion.div
                     whileHover={{ scale: 1.05 }}
                     className={`
                         flex item-center justify-center rounded-full font-semibold bg-dark text-light
-                        p-8 shadow-dark cursor-pointer dark:text-dark dark:bg-light
+                        p-8 shadow-dark cursor-pointer dark:text-dark dark:bg-light lg:p-6 md:p-4 xs:text-xs xs:p-2
                     `}
                 >
                     Web

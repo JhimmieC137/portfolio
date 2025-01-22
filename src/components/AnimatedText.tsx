@@ -32,7 +32,7 @@ const singleWord = {
 export default function AnimatedText({ text, className="" }: { text: string, className?: string }) {
     return (
         <div className={`
-            w-full mx-auto py-2 flex items-center justify-center text-center overflow-hidden 
+            w-full mx-auto py-2 flex items-center justify-center text-center overflow-hidden sm:py-0
         `}
         >
             <motion.h1
