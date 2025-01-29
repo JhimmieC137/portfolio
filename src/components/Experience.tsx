@@ -75,11 +75,11 @@ export default function Experience() {
                 />
                 <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
                     <Details 
-                        position="Software Engineer"
-                        company="Google"
-                        companyLink="https://www.google.com"
+                        position="Backend Engineer"
+                        company="Distinct"
+                        companyLink="https://distinct.ai"
                         time="2022-Present"
-                        address="Mountain View, CA"
+                        address="Ikeja, Lagos"
                         work={`
                             Worked on a team responsible for developing new features for Google's 
                             search engine, including improving the accuracy and relevance of search results and 
