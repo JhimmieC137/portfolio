@@ -50,13 +50,12 @@ export default function About() {
                                 it's not just about coding—I'm deeply committed to personal growth and love being part of meaningful projects that can make a real difference.
                             </p>
                             <p className="my-4 font-medium">
-                            I’m an experienced backend and full-stack developer with a focus on optimizing system performance. At Distinct AI, I played a key role in developing APIs using FastAPI, improving efficiency and user engagement through rigorous code reviews.
-                            I also contributed to Amal Outreach, building backend features for a medical app with Django Rest Framework
+                                I’m an experienced full-stack developer with a focus on backend engineering, optimizing system performance. At Distinct AI, I played a key role in developing APIs using FastAPI, improving efficiency and user engagement through rigorous code reviews.
+                                I also contributed to Amal Outreach, building backend features for a medical app with Django Rest Framework.
                             </p>
                             <p className="font-medium">
-                            Earlier in my career, I completed a competitive internship at HNG, working on Java and Python projects while collaborating with designers. As IT Team Lead at Upfolio, I developed a Django-based website and managed HR processes. My internship at the African Languages Technology Initiative allowed me to work on machine learning models and build digital board games.
-
-These experiences have helped me build a strong foundation in backend development, cloud technologies, and scalable systems. I’m passionate about innovation and aspire to contribute to meaningful projects that improve lives through technology.
+                                Earlier in my career, I completed a competitive internship at HNG, working on Python projects while collaborating with designers and other experts. As IT Team Lead at Upfolio, I developed a Django-based website and managed HR processes.I recently completed an <a target="_blank" href="https://pipeops.io/hackathon"><u>Hackathon</u></a>, organized by <a href="https://pipeops.io/" target="_blank"><u>PipeOps</u></a> wih my team finishing as a runner up.
+                                These experiences have helped me build a strong foundation in backend development, cloud technologies, and scalable systems. I’m passionate about innovation and aspire to contribute to meaningful projects that improve lives through technology.
                             </p>
                         </div>
                         <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light dark:bg-dark dark:border-light p-8 xl:col-span-4 md:order-1 md:col-span-8">

@@ -75,6 +75,16 @@ export default function Experience() {
                 />
                 <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
                     <Details 
+                        position="Full Stack Engineer"
+                        company="DivVerse Labs"
+                        companyLink="https://divverse.com/"
+                        time="February, 2025 - Present"
+                        address="Round Rock, TX"
+                        work={`
+                           Working as a full stack engineer at DivVerse Labs. I am responsible for developing and maintaining multiple apps and services.
+                        `}
+                    />
+                    <Details 
                         position="Backend Engineer"
                         company="Distinct"
                         companyLink="https://distinct.ai"
