@@ -9,7 +9,7 @@ export const metadata: Metadata = {
         url: "https://jimi.xyz",
     }],
     icons: ["/j_logo_2.png"],
-    keywords: "Eathora, AI, Medical Care, MedicalAI",
+    keywords: "Jhimmie, Jimi",
     description: "My name is David Olujimi, Jimi(Yoruba) or Jhimmie(English), if you will. I'm a software engineer and a passionate developer. Feel free to reach out to me, let's build something extraodinary",
 };
   

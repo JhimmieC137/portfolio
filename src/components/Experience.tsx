@@ -78,56 +78,61 @@ export default function Experience() {
                         position="Backend Engineer"
                         company="Distinct"
                         companyLink="https://distinct.ai"
-                        time="2022-Present"
-                        address="Ikeja, Lagos"
+                        time="October, 2023 - October, 2024"
+                        address="Dover, Delaware"
                         work={`
-                            Worked on a team responsible for developing new features for Google's 
-                            search engine, including improving the accuracy and relevance of search results and 
-                            developing new tools for data analysis and visualization.
+                           Developed the backend system for a hiring management platform using FastAPI, building essential endpoints and services to handle data processing and business logic. 
+                           Optimized system performance and ensured scalability while integrating third-party services for financial and mailing transactions. 
+                           Additionally, collaborated with the front-end team, providing support in implementing UI components and resolving integration challenges to ensure a seamless user experience.
                         `}
                     />
                     <Details 
-                        position="Software Engineer"
-                        company="Google"
-                        companyLink="https://www.google.com"
-                        time="2022-Present"
-                        address="Mountain View, CA"
-                        work={`Worked on a team responsible for developing new features for Google's 
-                            search engine, including improving the accuracy and relevance of search results and 
-                            developing new tools for data analysis and visualization.
+                        position="Backend Engineer"
+                        company="Amal Outreach"
+                        companyLink="https://amaloutreach.org/"
+                        time="April, 2023 - May, 2023"
+                        address="Oyo, Ibadan"
+                        work={`
+                            Designed and developed backend features for a medical mobile application using Django Rest Framework, 
+                            creating essential endpoints to handle business logic and data processing. Ensured API efficiency, security, and 
+                            scalability while integrating third-party services where needed to enhance functionality.
                         `}
                     />
                     <Details 
-                        position="Software Engineer"
-                        company="Google"
-                        companyLink="https://www.google.com"
-                        time="2022-Present"
-                        address="Mountain View, CA"
-                        work={`Worked on a team responsible for developing new features for Google's 
-                            search engine, including improving the accuracy and relevance of search results and 
-                            developing new tools for data analysis and visualization.
+                        position="Backend Engineer"
+                        company="HNG(Internship)"
+                        companyLink="https://hng.tech/internship"
+                        time="October, 2022 - December, 2022"
+                        address="Lagos, Ikeja"
+                        work={`
+                            Successfully completed various development tasks throughout the internship, contributing to the progression from the initial stage 
+                            to the final deployment. Collaborated with a multidisciplinary team of designers, engineers, illustrators, and product managers to develop Voxclips, 
+                            an application that generates animated talking head videos for podcast audio. 
+                            Played a key role in implementing dynamic, user-selected backgrounds, enhancing the overall customization and visual appeal of the generated videos.
                         `}
                     />
                     <Details 
-                        position="Software Engineer"
-                        company="Google"
-                        companyLink="https://www.google.com"
-                        time="2022-Present"
-                        address="Mountain View, CA"
-                        work={`Worked on a team responsible for developing new features for Google's 
-                            search engine, including improving the accuracy and relevance of search results and 
-                            developing new tools for data analysis and visualization.
+                        position="IT Manager"
+                        company="Upfolio"
+                        companyLink="https://next-upfolio.vercel.app/"
+                        time="May, 2021-Present"
+                        address="Oyo, Ibadan"
+                        work={`
+                            As the Team Lead of the IT department, I played a pivotal role in driving the company's digital presence. 
+                            I led the recruitment and onboarding process, efficiently coordinated tasks within the IT team, and took charge of the website’s operations. 
+                            This included uploading key opportunities, developing dynamic forms for programs and projects, and ensuring the site’s smooth and engaging functionality.
                         `}
                     />
                     <Details 
-                        position="Software Engineer"
-                        company="Google"
-                        companyLink="https://www.google.com"
+                        position="Programming Intern"
+                        company="African Language Technology Initiative"
+                        companyLink="https://www.alt-i.org/"
                         time="2022-Present"
-                        address="Mountain View, CA"
-                        work={`Worked on a team responsible for developing new features for Google's 
-                            search engine, including improving the accuracy and relevance of search results and 
-                            developing new tools for data analysis and visualization.
+                        address="Oyo, Ibadan"
+                        work={`
+                            Created machine learning models in Python, using Numpy and Matplotlib to differentiate between leaves of different
+                            trees with 90% accuracy. Built a terminal version of the African “AYO” board game with Python, and rebuilt the game, years later, to a more optimized
+                            edition with Java.
                         `}
                     />
 

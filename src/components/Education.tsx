@@ -63,25 +63,16 @@ export default function Education() {
                 />
                 <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
                     <Details 
-                        type="Bachelor Of Science In Computer Science"
-                        time="2016-2020"
-                        place="Massachusetts Institute Of Technology (MIT)"
-                        info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                            Intelligence."
+                        type="Bachelor Of Engineering In Civil Engineering"
+                        time="2016-2021"
+                        place="Federal University of Technology, Minna."
+                        info="Designing, building, and maintaining the infrastructure that keeps society running—roads, bridges, buildings, and water systems. It blends math, physics, and materials science to create sustainable and efficient solutions for everyday challenges."
                     />
                     <Details 
-                        type="Bachelor Of Science In Computer Science"
-                        time="2016-2020"
-                        place="Massachusetts Institute Of Technology (MIT)"
-                        info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                            Intelligence."
-                    />
-                    <Details 
-                        type="Bachelor Of Science In Computer Science"
-                        time="2016-2020"
-                        place="Massachusetts Institute Of Technology (MIT)"
-                        info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                            Intelligence."
+                        type="Fullstack Web Development Nanodegree "
+                        time="October, 2022"
+                        place="Udacity | Alx"
+                        info="Completed tasks and tests that improved my skils with tools and increased my understanding of the technical know hows of fullstack development"
                     />
                 </ul>
             </div>

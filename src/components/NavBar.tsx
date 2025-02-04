@@ -34,22 +34,22 @@ const navLinks = [
 
 const socialLinks = [
     {
-        link: '/',
+        link: 'https://x.com/jhimmie_?s=11',
         name: 'Twitter',
         tag: <XIcon />
     },
     {
-        link: '/',
+        link: 'https://github.com/jhimmieC137',
         name: 'Github',
         tag: <GithubIcon />,
     },
     {
-        link: '/',
+        link: 'https://linkedin.com/in/olujimi-david',
         name: 'Linkedin',
         tag: <LinkedInIcon />,
     },
     {
-        link: '/',
+        link: 'https://pin.it/5YweQ6HCc',
         name: 'Pinterest',
         tag: <PinterestIcon />,
     },
