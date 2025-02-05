@@ -28,7 +28,7 @@ export default function Home() {
               />
             </div>
             <div className="w-1/2 lg:w-full lg:text-center flex flex-col items-center self-center">
-              <AnimatedText text="Hi, I'm Olu-jimi David" className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"/>
+              <AnimatedText text="Hi, I'm Olujimi David" className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"/>
               <p className="my-4 text-base md:text-sm sm:text-sm font-medium">
                 An experienced developer with expertise in designing and implementing user-friendly, efficient, scalable applications with languages such as Python, JavaScript, and Java. 
                 I'm always driven to bring extraodinary ideas to reality. Let's work together to create something amazing.
@@ -44,9 +44,9 @@ export default function Home() {
                 >
                   Resume<LinkArrow className="w-6 ml-1" />
                 </Link>
-                <Link href="mailto:toluwalope.david@gmail.com"
+                <a href="mailto:toluwalope.david@gmail.com"
                   className="ml-4 text-lg md:text-base font-medium capitalize text-dark dark:text-light underline"
-                >Contact</Link>
+                >Contact</a>
               </div>
             </div>
           </div>

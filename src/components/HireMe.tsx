@@ -2,11 +2,8 @@
 
 import Link from "next/link";
 import { CircularText } from "./Icons";
-import { useTheme } from "../hooks/useTheme";
 
 export default function HireMe() {
-    const { theme } = useTheme();
-    console.log(theme)
 
     return (
         <div className="
@@ -16,7 +13,7 @@ export default function HireMe() {
         >
             <div className="w-48 md:w-24 h-auto flex items-center justify-center relative">
                 <CircularText className={`fill-dark dark:fill-light animate-spin-slow origin-center`}/>
-                <Link
+                <a
                     href="mailto:toluwalope.david@gmail.com"
                     className={`flex items-center justify-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 
                         bg-dark dark:bg-light text-light dark:text-dark shadow-md border border-solid border-dark dark:border-light w-24 h-24 rounded-full font-semibold 
@@ -25,7 +22,7 @@ export default function HireMe() {
                     `}
                 >
                     Hire me
-                </Link>
+                </a>
             </div>
         </div>
     );

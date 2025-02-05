@@ -50,7 +50,7 @@ export default function About() {
                                 it's not just about coding—I'm deeply committed to personal growth and love being part of meaningful projects that can make a real difference.
                             </p>
                             <p className="my-4 font-medium">
-                                I’m an experienced full-stack developer with a focus on backend engineering, optimizing system performance. At Distinct AI, I played a key role in developing APIs using FastAPI, improving efficiency and user engagement through rigorous code reviews.
+                                I’m an experienced Full-stack developer with a focus on Backend engineering, optimizing system performance. At Distinct AI, I played a key role in developing APIs using FastAPI, improving efficiency and user engagement through rigorous code reviews.
                                 I also contributed to Amal Outreach, building backend features for a medical app with Django Rest Framework.
                             </p>
                             <p className="font-medium">
