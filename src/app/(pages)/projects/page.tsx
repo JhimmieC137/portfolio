@@ -156,7 +156,7 @@ export default function Projects() {
                                 img={eathora}
                                 summary="
                                     An easy-to-use app for Nigerians to access fast reliable health assessments, consultaions and medical support, right from a mobile phone, ensuring you get the care you need when you need it.
-                                    This is app is and informative landing page for users to joing the waitlist."
+                                    This is app is an informative landing page for users to join the waitlist."
                                 link="https://eathora.com"
                                 github="https://github.com/JhimmieC137/eathora-landing-page"
                                 type="Featured Project"
