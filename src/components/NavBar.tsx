@@ -179,7 +179,7 @@ export default function NavBar() {
 
                     <button
                         onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-                        className={`ml-3 flex items-center justify-center rounded-full p-1
+                        className={`flex items-center justify-center rounded-full p-1
                             ${theme === 'dark' ? 'bg-light text-dark' : 'bg-dark text-light'}
                         `}
                     >

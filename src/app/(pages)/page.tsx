@@ -14,7 +14,7 @@ export default function Home() {
       <TransitionEffect />
       <main className="flex items-center text-dark dark:text-light w-full min-h-screen 2xl:">
         <SubLayout className="pt-0 xl:pt-0 lg:pt-0 md:pt-16 sm:pt-8">
-          <div className="flex items-center justify-between w-full lg:flex-col">
+          <div className="flex items-center justify-between w-full lg:flex-col lg:gap-y-[3rem]">
             <div className="w-[35%] md:w-full">
               <Image 
                 src={profilePic}

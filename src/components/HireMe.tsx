@@ -1,6 +1,5 @@
 "use client"
 
-import Link from "next/link";
 import { CircularText } from "./Icons";
 
 export default function HireMe() {

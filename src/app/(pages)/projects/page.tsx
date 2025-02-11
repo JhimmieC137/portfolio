@@ -50,7 +50,7 @@ const FeaturedProject = ({
                 />
             </Link>
 
-            <div className="w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-6">
+            <div className="w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:mt-5">
                 <span className="text-primary dark:text-primaryDark font-medium text-xl">{type}</span>
                 <Link href={link} target="_blank" className="hover:underline underline-offset-2">
                     <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light">{title}</h2>
