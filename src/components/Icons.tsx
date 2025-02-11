@@ -279,7 +279,7 @@ export const MoonIcon = ({ className, ...rest }: { className?: string }) => (
         height="24"
         viewBox="0 0 24 24"
         {...rest}
-        className={`w-full h-auto ${className}`}
+        className={` ${className}`}
     >
         <rect x="0" y="0" width="24" height="24" fill="rgba(255, 255, 255, 0)" />
         <g
@@ -497,7 +497,7 @@ export const LinkArrow = ({ className, ...rest }: { className?: string }) => (
         width={24}
         height={24}
         viewBox="0 0 24 24"
-        className={`w-full h-auto ${className}`}
+        className={` ${className}`}
         {...rest}
     >
         <path fill="none" d="M0 0h24v24H0z" />

@@ -1,6 +1,5 @@
 import SubLayout from "../../components/SubLayout";
 import Image from "next/image";
-// import profilePic from '../../../public/images/profile/developer-pic-1.png';
 import profilePic from '../../../public/catoon_jimi_transparent.png';
 import AnimatedText from "../../components/AnimatedText";
 import Link from "next/link";
