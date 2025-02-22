@@ -32,7 +32,7 @@ const Details = ({
                     <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
                         {position}&nbsp;
                         <a
-                            className="text-primary dark:text-primaryDark capitalize"
+                            className="text-primary dark:text-primaryDark capitalize hover:underline"
                             href={companyLink}
                             target="_blank"
                             rel="noopener noreferrer"
