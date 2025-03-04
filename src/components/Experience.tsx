@@ -74,16 +74,16 @@ export default function Experience() {
                     className="absolute left-9 top-1.5 w-[4px] h-full bg-dark dark:bg-light origin-top md:w-[2px] md:left-[30px] xs:left-[20px]"
                 />
                 <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
-                    <Details 
+                    {/* <Details 
                         position="Full Stack Engineer"
-                        company="DivVerse Labs"
+                        company="Aparte"
                         companyLink="https://divverse.com/"
                         time="February, 2025 - Present"
                         address="Round Rock, TX"
                         work={`
                            Working as a full stack engineer at DivVerse Labs. I am responsible for developing and maintaining multiple apps and services.
                         `}
-                    />
+                    /> */}
                     <Details 
                         position="Backend Engineer"
                         company="Distinct"
