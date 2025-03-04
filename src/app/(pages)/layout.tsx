@@ -5,11 +5,11 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
     title: "Jimi",
     authors: [{
-        name: "David Olujim", 
-        url: "https://jimi.xyz",
+        name: "David Olujimi", 
+        url: "https://portfolio.jhimmie.com",
     }],
     icons: ["/j_logo_2.png"],
-    keywords: "Jhimmie, Jimi",
+    keywords: ["Jhimmie", "Jimi", "David Olujimi", ],
     description: "My name is David Olujimi, Jimi(Yoruba) or Jhimmie(English), if you will. I'm a software engineer and a passionate developer. Feel free to reach out to me, let's build something extraodinary",
 };
   
